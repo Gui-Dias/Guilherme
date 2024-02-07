@@ -1,40 +1,71 @@
-body(    
-    width: 97.6vw;
-    padding: 10px;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
-    )
-.principal{
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    background-color: antiquewhite;
-    padding: 10px;
+
+
 }
-.font-style{
-    font-family: 'Cairo', sans-serif;
-    font-family: 'Honk', system-ui;
-    font-family: 'Rubik Glitch Pop', system-ui;
-    font-family: 'Shadows Into Light', cursive;
+
+.wrap-menu{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey ;
+
+    }
+
+ul{
+
+    position: absolute;
+    top: 5px;
+    left: 30%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
     text-align: center;
-    border-bottom: 2px solid lightgray;
-    padding-bottom: 20px;
 }
 
-.font-style02{
-    text-align: center;
+.perfil01{
+width: 100%;
+height: 650px;
+background-color: lightgreen;
 
 }
-
-.div-calculos{
-padding: 50px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-evenly;
-flex-wrap: wrap;
-
-
-
-
+a{
+text-decoration: none;
 }
+
+a:hover{
+text-decoration: underline;
+}
+
+.perfil02{
+    width: 100%;
+    height: 650px;
+    background-color: white;
     
+    }
 
+    .Tecnologia{
+        width: 100%;
+        height: 650px;
+        background-color: lightgreen;
+        
+        }
 
+        .ctt{
+            width: 100%;
+            height: 650px;
+            background-color: white;
+            
+            }
