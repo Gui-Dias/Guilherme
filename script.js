@@ -1,10 +1,27 @@
-function soma() {
-    var num1 = document.getElementById("num1").valueasnumber ;
-    var num2 = document.getElementById("num2").valueasnumber ;
-    
-    var resultado = num1 + num2
-        document.getElementById("resultado").textContent= resultado ;
-        console.log(resultado)
-    
+var nomeGlobal;
+var mensagemGlobal;
 
+function conferirMesagemWhatsApp(){
+    var nome = document.getElementById("nome").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    nomeGlobal = nome;
+    mensagemGlobal = mensagem;
+
+    document.getElementById("confNome").textContent = nome;
+    document.getElementById("confMsg").textContent = mensagem;
+}
+
+function enviar(){
+    var numeroTelefone = "5541998862910";
+    console.log(nomeGlobal, mensagemGlobal)
+    var linkWhatsApp = 
+    "https://wa.me/" + 
+    numeroTelefone + 
+    "?text=NOME: " + 
+    nomeGlobal + 
+    " - " + 
+    mensagemGlobal;
+
+    window.open(linkWhatsApp, "_blank")
 }
